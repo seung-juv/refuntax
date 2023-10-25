@@ -1,0 +1,705 @@
+.interactive-visible {
+  transition: 0.2s all ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+#app {
+  max-width: 425px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  font-family: "Pretendard", "Noto Sans", "Roboto", "sans-serif";
+  padding-top: 80px;
+}
+
+#app > .header {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+#app > .header > .logo {
+  width: 90px;
+}
+
+#app > .header > .logo > img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+#app > .header > .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#app > .header > .right > .support-button {
+  border: none;
+  border-radius: 26px;
+  padding: 10px 15px 8px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #02b9ca;
+}
+
+#app > .header > .right > .menu-button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 6px;
+}
+
+#app > .header > .right > .menu-button > span {
+  width: 23px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #02b9ca;
+  display: block;
+}
+
+#app > .main {
+}
+
+#app > .main > .section-1 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 70px 20px 20px;
+}
+
+#app > .main > .section-1 > .description {
+  padding: 12px 30px 11px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  background-color: #daf4f6;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#app > .main > .section-1 > .title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 48px;
+  margin-bottom: 25px;
+}
+
+#app > .main > .section-1 > .title > b {
+  color: #02b9ca;
+}
+
+#app > .main > .section-1 > .image-container {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 42px;
+  align-items: center;
+}
+
+#app > .main > .section-1 > .image-container > .background {
+  box-shadow: 6px 6px 60px rgba(23, 63, 67, 0.3);
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  border-radius: 15px 15px 0 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#app > .main > .section-1 > .image-container > .coin-1 {
+  position: absolute;
+  width: 66px;
+  top: 0;
+  left: -35px;
+  z-index: 3;
+}
+
+#app > .main > .section-1 > .image-container > .coin-2 {
+  position: absolute;
+  width: 76px;
+  top: 175px;
+  right: -50px;
+  z-index: 3;
+}
+
+#app > .main > .section-1 > .image-container > .coin-3 {
+  position: absolute;
+  width: 112px;
+  top: 190px;
+  left: -70px;
+  z-index: 1;
+}
+
+#app > .main > .section-1 > .image-container > .phone {
+  width: 290px;
+  position: relative;
+  z-index: 2;
+}
+
+#app > .main > .section-1 > .button-container {
+  width: 100%;
+}
+
+#app > .main > .section-1 > .button-container > .button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  padding: 23px 0 21px;
+  border: none;
+  background-color: #02b9ca;
+  border-radius: 16px;
+  position: relative;
+}
+
+#app > .main > .section-2 {
+  padding: 50px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+#app > .main > .section-2 > .title {
+  color: #000000;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+#app > .main > .section-2 > .title > b {
+  color: #02b9ca;
+}
+
+#app > .main > .section-2 > .financial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+#app > .main > .section-2 > .financial-container > .shinhan {
+  height: 24px;
+  object-fit: contain;
+}
+
+#app > .main > .section-2 > .financial-container > .woori {
+  height: 35px;
+  object-fit: contain;
+}
+
+#app > .main > .section-2 > .financial-container > .ibk {
+  height: 45px;
+  object-fit: contain;
+}
+
+#app > .main > .section-3 {
+  padding: 80px 20px;
+  background-color: #ecf5f6;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#app > .main > .section-3 > .title {
+  text-align: center;
+  font-size: 36px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#app > .main > .section-3 > .description {
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 30px;
+}
+
+#app > .main > .section-3 > .checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#app > .main > .section-3 > .checkbox-container > .checkbox {
+}
+
+#app > .main > .section-3 > .checkbox-container > .checkbox > .input {
+  display: none;
+}
+
+#app > .main > .section-3 > .checkbox-container > .checkbox > .text {
+  display: block;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  word-break: keep-all;
+  padding: 18px 0 14px 58px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  line-height: 25px;
+  border: 2px solid #ffffff;
+  transition: 0.2s all ease;
+  background-image: url("../images/section_3_check_off.png");
+  background-position: 18px center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+}
+
+#app
+  > .main
+  > .section-3
+  > .checkbox-container
+  > .checkbox
+  > .input:checked
+  + .text {
+  border-color: #02b9ca;
+  background-image: url("../images/section_3_check_on.png");
+}
+
+#app > .main > .section-3 > .button {
+  padding: 23px 90px 22px;
+  border: none;
+  background-color: #02b9ca;
+  border-radius: 90px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#app > .main > .section-4 {
+  padding: 75px 20px 80px;
+}
+
+#app > .main > .section-4 > .title {
+  text-align: center;
+  font-size: 35px;
+  line-height: 47px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#app > .main > .section-4 > .title > b {
+  color: #02b9ca;
+}
+
+#app > .main > .section-4 > .card {
+  position: relative;
+  padding: 115px 35px 35px;
+  border-radius: 24px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+#app > .main > .section-4 > .card:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+#app > .main > .section-4 > .card > .check {
+  width: 28px;
+  object-fit: contain;
+  position: absolute;
+  top: 42px;
+  left: 40px;
+}
+
+#app > .main > .section-4 > .card > .image-1 {
+  width: 142px;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  object-fit: contain;
+}
+
+#app > .main > .section-4 > .card > .image-2 {
+  width: 173px;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  object-fit: contain;
+}
+
+#app > .main > .section-4 > .card > .text {
+  font-size: 21px;
+  line-height: 31px;
+  color: #000000;
+  font-weight: 600;
+  word-break: keep-all;
+}
+
+#app > .main > .section-4 > .card > .text > b {
+  color: #02b9ca;
+}
+
+#app > .main > .section-5 {
+  padding: 80px 20px;
+  background-color: #ecf5f6;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#app > .main > .section-5 > .title {
+  text-align: center;
+  color: #000000;
+  font-size: 35px;
+  line-height: 47px;
+  font-weight: 600;
+}
+
+#app > .main > .section-5 > .title > b {
+  color: #02b9ca;
+}
+
+#app > .main > .section-5 > .talk-1 {
+  background-color: #02b9ca;
+  align-self: flex-start;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 19px;
+  padding: 20px 24px 18px;
+  font-weight: 500;
+  border-radius: 20px;
+  box-shadow: 9px 9px 30px rgba(0, 0, 0, 0.1);
+  line-height: 25px;
+}
+
+#app > .main > .section-5 > .talk-2 {
+  align-self: flex-end;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 19px;
+  line-height: 25px;
+  padding: 20px 20px 18px;
+  font-weight: 500;
+  border-radius: 20px;
+  box-shadow: 9px 9px 30px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.4px;
+  word-break: keep-all;
+}
+
+#app > .main > .section-5 > .talk-2:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+#app > .main > .section-6 {
+  padding: 80px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#app > .main > .section-6 > .title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 47px;
+  color: #000000;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+#app > .main > .section-6 > .warning {
+  width: 38px;
+  object-fit: contain;
+  margin-bottom: 17px;
+}
+
+#app > .main > .section-6 > .title > b {
+  color: #02b9ca;
+}
+
+#app > .main > .section-6 > .description-container {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+#app > .main > .section-6 > .description-container > .description {
+  font-size: 21px;
+  line-height: 31px;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+#app > .main > .section-6 > .description-container > .line {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 15px;
+  background-color: #dff8fa;
+  z-index: 1;
+  transform: scaleX(1.05);
+}
+
+#app > .main > .section-6 > .description-2 {
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#app > .main > .section-6 > .text {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#app > .main > .section-6 > .text > b {
+  color: #ff2779;
+}
+
+#app > .main > .section-6 > .text-2 {
+  background-color: #ff1b71;
+  padding: 20px 20px 18px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  white-space: nowrap;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#app > .main > .section-7 {
+  background: #0b3138;
+  padding: 83px 0 75px;
+}
+
+#app > .main > .section-7 > .article-1 {
+  margin-bottom: 100px;
+}
+
+#app > .main > .section-7 > .article-1 > .title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 47px;
+  font-weight: 600;
+  margin-bottom: 43px;
+}
+
+#app > .main > .section-7 > .article-1 > .swiper-navigator-container {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin: 0 20px 20px;
+}
+
+#app > .main > .section-7 > .article-1 > .swiper-navigator-container > .left {
+  width: 15px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-1
+  > .swiper-navigator-container
+  > .left
+  > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#app > .main > .section-7 > .article-1 > .swiper-navigator-container > .line {
+  width: 1px;
+  height: 21px;
+  background-color: #5a7479;
+}
+
+#app > .main > .section-7 > .article-1 > .swiper-navigator-container > .right {
+  width: 15px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-1
+  > .swiper-navigator-container
+  > .right
+  > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#app > .main > .section-7 > .article-1 > .swiper {
+  padding: 0 80px 0 20px;
+}
+
+#app > .main > .section-7 > .article-1 > .swiper::after {
+  content: "";
+  display: block;
+  background: linear-gradient(to right, transparent, rgba(21, 47, 55, 0.95));
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
+  width: 75px;
+  z-index: 50;
+  pointer-events: none;
+}
+
+#app > .main > .section-7 > .article-1 > .swiper > .swiper-wrapper {
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-1
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide {
+  padding: 30px 25px 28px;
+  background-color: #0b282e;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-1
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide
+  > .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-1
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide
+  > .contents {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #9aafb3;
+  word-break: keep-all;
+  margin-bottom: 22px;
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-1
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide
+  > .bio {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #9aafb3;
+  word-break: keep-all;
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-1
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide
+  > .price {
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+  word-break: keep-all;
+  font-weight: 500;
+}
+
+#app > .main > .section-7 > .article-2 {
+  padding: 0 20px;
+}
+
+#app > .main > .section-7 > .article-2 > .title {
+  font-size: 35px;
+  line-height: 47px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#app > .main > .section-7 > .article-2 > .title > b {
+  color: #02b9ca;
+}
+
+#app > .main > .section-7 > .article-2 > .help-container {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #ffffff;
+  padding: 15px 23px;
+}
+
+#app > .main > .section-7 > .article-2 > .help-container > .help {
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  color: #000000;
+  font-weight: 600;
+  padding: 20px 0 18px;
+  position: relative;
+}
+
+#app > .main > .section-7 > .article-2 > .help-container > .help::after {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/section_7_dropdown.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-2
+  > .help-container
+  > .help:not(:last-of-type) {
+  border-bottom: 1px solid #110011;
+}
