@@ -155,18 +155,6 @@
   width: 100%;
 }
 
-#app > .main > .section-1 > .button-container > .button {
-  font-size: 20px;
-  font-weight: 600;
-  color: #ffffff;
-  width: 100%;
-  padding: 23px 0 21px;
-  border: none;
-  background-color: #02b9ca;
-  border-radius: 16px;
-  position: relative;
-}
-
 #app > .main > .section-2 {
   padding: 50px 0;
   display: flex;
@@ -679,8 +667,10 @@
   letter-spacing: -0.4px;
   color: #000000;
   font-weight: 600;
-  padding: 20px 0 18px;
+  padding: 20px 30px 18px 0;
   position: relative;
+  word-break: keep-all;
+  line-height: 22px;
 }
 
 #app > .main > .section-7 > .article-2 > .help-container > .help::after {
@@ -694,7 +684,8 @@
   background-position: center center;
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 22px;
+  transform: rotate(180deg);
 }
 
 #app
@@ -704,4 +695,49 @@
   > .help-container
   > .help:not(:last-of-type) {
   border-bottom: 1px solid #110011;
+}
+
+#app > .main > .section-7 > .article-2 > .help-container > .help > .text {
+  font-size: 16px;
+  color: #737d88;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 22px;
+  margin-top: 20px;
+  word-break: keep-all;
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-2
+  > .help-container
+  > .help.hidden-text::after {
+  transform: rotate(0);
+}
+
+#app
+  > .main
+  > .section-7
+  > .article-2
+  > .help-container
+  > .help.hidden-text
+  > .text {
+  display: none;
+}
+
+#app > .main > .button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  width: calc(100% - 40px);
+  padding: 23px 0 21px;
+  border: none;
+  background-color: #02b9ca;
+  border-radius: 16px;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
