@@ -4,6 +4,10 @@
   transform: translateY(30px);
 }
 
+.interactive-visible-duration-1000 {
+  transition-duration: 1s;
+}
+
 #app {
   max-width: 425px;
   width: 100%;
