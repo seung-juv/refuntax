@@ -489,7 +489,7 @@
           간편한 환급 무료 조회하기
         </button>
       </main>
-      <div class="popup">
+      <div class="popup hide">
         <div class="background"></div>
         <div
           class="image interactive-visible interactive-visible-duration-1000"
@@ -554,6 +554,7 @@
     const helps = document.querySelectorAll(
       "#app > .main > .section-7 > .article-2 > .help-container > .help",
     );
+    const popup = document.querySelector("#app > .popup");
 
     for (let i = 0; i < helps.length; i++) {
       const help = helps[i];
@@ -572,14 +573,23 @@
       });
     }
 
+    let isPopupVisible = false;
+
     function handler() {
       const scrollY = window.scrollY;
+
       coin1.style.transform = "translateY(" + -(scrollY / 2) + "px)";
       coin2.style.transform = "translateY(" + -(scrollY / 1.5) + "px)";
       coin3.style.transform = "translateY(" + -scrollY / 5 + "px)";
       phoneBackground.style.transform = "translateY(" + -scrollY / 5 + "px)";
       phone.style.transform = "translateY(" + -scrollY / 5 + "px)";
       const elements = document.querySelectorAll(".interactive-visible");
+
+      if (!isPopupVisible) {
+        if (scrollY > window.innerHeight / 2) {
+          popup.classList.remove("hide");
+        }
+      }
       for (let i = 0; i < elements.length; i++) {
         const element = elements[i];
         const dataset = element.dataset;
